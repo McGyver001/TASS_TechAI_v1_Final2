@@ -1,0 +1,27 @@
+:root{--ford-blue:#003399;--bg:#f7fafc;--panel:#fff;--text:#0b1220;--muted:#6b7280}
+[data-theme='dark']{--bg:#071128;--panel:#081827;--text:#e6f0ff;--muted:#9fb0d9}
+*{box-sizing:border-box}html,body,#root{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;background:var(--bg);color:var(--text)}
+.header{background:linear-gradient(135deg,#0055cc,#003399);color:white;padding:12px 16px;display:flex;align-items:center;gap:12px}
+.brand img{vertical-align:middle;height:28px}
+.tabs{display:flex;gap:8;padding:10px;justify-content:space-around;background:transparent}
+.tabs button{flex:1;padding:10;border-radius:10;border:none;background:transparent;font-weight:700;color:var(--muted);cursor:pointer}
+.tabs button.active{background:rgba(255,255,255,0.06);color:var(--ford-blue)}
+.container{display:flex;gap:12px;padding:12px;max-width:980px;margin:12px auto}
+.left{flex:1}
+.right{width:320px;flex-shrink:0}
+.card{background:var(--panel);padding:14px;border-radius:12px;margin-bottom:12px;box-shadow:0 10px 30px rgba(2,6,23,0.06)}
+.btn{background:var(--ford-blue);color:white;padding:10;border-radius:10;border:none;cursor:pointer;font-weight:700}
+.input{padding:8;border-radius:8;border:1px solid rgba(0,0,0,0.08);width:100%}
+.eff-row{display:flex;align-items:center;justify-content:space-between}
+.eff-large{font-size:28px;font-weight:800}
+.chat-panel{position:fixed;right:18px;bottom:18px;width:360px;max-height:80vh;z-index:90}
+.chat-card{display:flex;flex-direction:column}
+.chat-messages{max-height:360px;overflow:auto;padding:8;border-radius:8;background:rgba(0,0,0,0.02)}
+.msg{padding:8;border-radius:10;margin-bottom:8;display:inline-block}
+.msg.user{padding:8;border-radius:10;margin-bottom:8;display:inline-block;background:var(--ford-blue);color:white;margin-left:auto}
+.msg.bot{padding:8;border-radius:10;margin-bottom:8;display:inline-block;background:#eef2f7;color:var(--text)}
+.chat-card .input{border-radius:8;padding:8}
+.login-screen{height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#0055cc,#003399);color:white}
+.login-card{background:white;color:#003399;padding:20px;border-radius:12px;text-align:center;width:92%;max-width:420px}
+.login-card .input{width:90%;margin:8px auto;display:block}
+@media (max-width:900px){ .container{flex-direction:column;padding:10px}.right{order:2;width:100%}.chat-panel{left:12px;right:12px;bottom:12px;width:auto} }
