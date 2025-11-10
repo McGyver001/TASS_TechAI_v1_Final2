@@ -19,7 +19,7 @@ export default function Dashboard(){
       <ul>
         <li><a href="https://www.fmcdealer.dealerconnection.com/">Ford Login</a></li>
         <li><a href="https://www.motorcraftservice.com/">Motorcraft Service</a></li>
-        <li><a href="https://my.alldata.com/">Alldata Login</a></li>
+        <li><a href="https://my.alldata.com/ip">Alldata Login</a></li>
       </ul>
     </div>
   )
